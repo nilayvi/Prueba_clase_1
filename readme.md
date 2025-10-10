@@ -5,7 +5,7 @@ R= El nombre , el evento que reacciona (ej: push sobre branches especificas, pul
 push:
     branches: [ "main" ]
   pull_request:
-    # The branches below must be a subset of the branches above
+    "# The branches below must be a subset of the branches above"
     branches: [ "main" ]
 -	¿Qué tareas o "jobs" suelen incluir los workflows de CI por defecto? 
 Checkout ( de este repo me trae todo el código), Descargar dependencias ( pip install) build
@@ -26,5 +26,6 @@ Sirve para autenticar el acceso a la API de Github.
 
 ¿Cómo sería una forma segura de pasar configuraciones y contraseñas al pipeline?
 Guardarlas como variables de entorno (env) o secrets.
+
 
 
