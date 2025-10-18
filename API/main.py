@@ -6,11 +6,10 @@ import os
 
 app = FastAPI()
 
-
-# Configuration: directory to store files. Use a static directory path.
-# NOTE: this is a fixed directory per your request.
+        
+# Configuration: directory to store files. Use a directory named 'files' relative to repo root.
 DEFAULT_DIR = Path(__file__).parent.parent / "files"
-FILE_DIR = Path(r"D:\Education\Prueba_clase_1").resolve()
+FILE_DIR = DEFAULT_DIR.resolve()
 
 
 class FileCreate(BaseModel):
